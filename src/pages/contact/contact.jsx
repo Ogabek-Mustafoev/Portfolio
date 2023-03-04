@@ -1,5 +1,10 @@
+import { GoBack } from '../../components';
+
 export default function Contact() {
   return (
-    <div>Contact</div>
+    <div className="container">
+      <h1>Contact page</h1>
+      <GoBack />
+    </div>
   )
 }
