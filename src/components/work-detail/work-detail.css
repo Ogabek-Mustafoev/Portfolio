@@ -1,0 +1,114 @@
+.work-card {
+  width: 90vw;
+  max-width: 1300px;
+  margin: 4rem auto;
+  padding: 1rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  box-shadow: 15px 15px 30px var(--black), -16px -16px 30px var(--white);
+  overflow: hidden;
+}
+.work-card .work-card-img {
+  height: 100%;
+  flex: 0 0 60%;
+  max-width: 60%;
+  padding-right: 0.5rem;
+  height: 100%;
+  object-fit: cover;
+}
+.work-card .work-card-content {
+  padding-left: 0.5rem;
+  flex: 0 0 40%;
+  max-width: 40%;
+  height: min-content;
+}
+.work-card .work-card-content .btns {
+  display: flex;
+  gap: 1rem;
+}
+.work-card .work-card-img img {
+  border-radius: 1.5rem;
+  width: 100%;
+  height: 100%;
+}
+.work-card .work-card-content h1 {
+  font-size: 1.5rem;
+  color: var(--text-black-900);
+  margin: 1rem 0;
+  text-align: center;
+}
+.work-card .work-card-content h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: var(--text-black-700);
+}
+.work-card .work-card-content p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: gray;
+}
+
+.work-card .work-card-content .btns .btn {
+  font-size: 1.2rem;
+  color: var(--skin-color);
+  background: var(--drop-color-05);
+}
+.work-card .work-card-content .btns .btn:hover {
+  color: white;
+  background: var(--skin-color);
+}
+
+@media (max-width: 900px) {
+  .work-card {
+    box-shadow: 10px 10px 20px var(--black), -10px -10px 20px var(--white);
+  }
+  .work-card .work-card-img {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .work-card .work-card-content {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 750px) {
+  .work-card {
+    border-radius: 1rem;
+    margin: 3rem auto;
+  }
+  .work-card .work-card-img {
+    padding: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .work-card .work-card-img img {
+    border-radius: 1rem;
+  }
+  .work-card .work-card-content {
+    padding: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .work-card .work-card-content .btns {
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  .work-card {
+    width: 90vw;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding: 0.8rem;
+  }
+  .work-card .work-card-content h1 {
+    font-size: 1.4rem;
+  }
+  .work-card .work-card-content h3 {
+    font-size: 1.1rem;
+  }
+  .work-card .work-card-content p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,30 @@
+.go-back {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+.go-back .back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-black-50);
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--text-black-900);
+  margin: 2rem 0;
+  transition: 0.3s;
+}
+.go-back .back:hover {
+  cursor: pointer;
+  background: var(--skin-color);
+  color: #fff;
+}
+@media (max-width: 900px) {
+  .go-back {
+    margin-top: 6rem;
+  }
+}

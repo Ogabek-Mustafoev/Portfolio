@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  color: var(--text-black-900);
+  margin: 3rem auto;
+}
+.service-wrap {
+  width: unset;
+  padding: 0 2rem 3rem 3rem;
+}
+.card-wrapper {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-template: 80px;
+}
+
+@media (max-width: 800px) {
+  .service-wrap {
+    padding: 0 2rem 3rem 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .card-wrapper {
+    gap: 1rem;
+  }
+  .service-wrap {
+    padding: 0 1.5rem 3rem 1.5rem;
+  }
+}

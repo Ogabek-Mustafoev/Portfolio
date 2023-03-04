@@ -1,0 +1,162 @@
+.drop {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  box-shadow: inset 20px 20px 20px var(--drop-color-05),
+    25px 35px 20px var(--drop-color-05), 25px 30px 30px var(--drop-color-05),
+    inset -20px -20px 25px var(--drop-color-09);
+  transition: 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.drop:nth-child(1) {
+  border-radius: 61% 39% 51% 49% / 47% 13% 87% 53%;
+}
+.drop:nth-child(2) {
+  border-radius: 50% 50% 37% 63% / 43% 68% 32% 57%;
+}
+.drop:nth-child(3) {
+  border-radius: 35% 65% 69% 31% / 49% 44% 56% 51%;
+}
+.drop:nth-child(4) {
+  border-radius: 63% 37% 47% 53% / 58% 22% 78% 42%;
+}
+.drop:nth-child(5) {
+  border-radius: 34% 66% 31% 69% / 58% 69% 31% 42%;
+}
+.drop:nth-child(6) {
+  border-radius: 46% 54% 65% 35% / 70% 43% 57% 30%;
+}
+.drop:nth-child(7) {
+  border-radius: 23% 77% 51% 49% / 24% 46% 54% 76%;
+}
+.drop:nth-child(8) {
+  border-radius: 49% 51% 81% 19% / 65% 52% 48% 35%;
+}
+.drop:nth-child(9) {
+  border-radius: 50% 50% 50% 50% / 35% 35% 65% 65%;
+}
+.drop:nth-child(10) {
+  border-radius: 74% 26% 22% 78% / 47% 29% 71% 53%;
+}
+.drop:hover {
+  border-radius: 50%;
+}
+.drop::before,
+.drop::after {
+  content: "";
+  position: absolute;
+  background: var(--white);
+  border-radius: 50%;
+  opacity: 0.9;
+  filter: blur(1px);
+}
+.drop::before {
+  top: 50px;
+  left: 85px;
+  width: 35px;
+  height: 35px;
+}
+.drop::after {
+  top: 90px;
+  left: 115px;
+  width: 15px;
+  height: 15px;
+}
+.drop .drop-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  grid-template: 15px;
+}
+.drop .drop-content h2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  width: 80px;
+  height: 80px;
+  color: var(--skin-color);
+  background: var(--bg-black-900);
+  border-radius: 50%;
+  box-shadow: inset 2px 5px 10px var(--drop-color-05),
+    inset -2px -5px 10px var(--bg-black-900),
+    15px 15px 10px var(--drop-color-05), 15px 10px 15px var(--drop-color-025);
+}
+.drop .drop-content p,
+.drop .drop-content a {
+  color: var(--text-black-700);
+}
+.drop .drop-content p {
+  margin: 1rem 0;
+}
+.drop .drop-content a {
+  position: relative;
+  padding: 8px 20px;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: 500;
+  background: var(--skin-color);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.drop .drop-content a:hover {
+  opacity: 1;
+}
+
+@media (max-width: 800px) {
+  .drop {
+    position: relative;
+    width: 320px;
+    height: 320px;
+  }
+  .drop::before {
+    top: 40px;
+    left: 80px;
+    width: 30px;
+    height: 30px;
+  }
+  .drop::after {
+    top: 75px;
+    left: 100px;
+    width: 12px;
+    height: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .drop {
+    width: 300px;
+    height: 300px;
+    box-shadow: inset 15px 15px 15px var(--drop-color-05),
+      10px 15px 15px var(--drop-color-05), 20px 25px 25px var(--drop-color-05),
+      inset -15px -15px 20px var(--drop-color-09);
+  }
+  .drop::before {
+    top: 50px;
+    left: 70px;
+    width: 30px;
+    height: 30px;
+  }
+  .drop::after {
+    top: 85px;
+    left: 90px;
+    width: 12px;
+    height: 12px;
+  }
+}
+@media (max-width: 310px) {
+  .drop {
+    position: relative;
+    width: 280px;
+    height: 280px;
+  }
+}

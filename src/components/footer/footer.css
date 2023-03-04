@@ -1,0 +1,26 @@
+.footer {
+  position: fixed;
+  color: var(--text-black-900);
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+}
+.footer .github-icon {
+  padding: 1rem 2rem;
+}
+.footer .github-icon a {
+  font-size: 2rem;
+  color: var(--skin-color);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+.footer .github-icon a:hover {
+  opacity: 1;
+}
+
+@media (max-width: 400px) {
+  .footer .github-icon {
+    padding-left: 1.2rem;
+    padding-bottom: 0.5rem;
+  }
+}

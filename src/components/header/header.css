@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 5;
+  height: 5rem;
+  overflow: hidden;
+  background: var(--bg-black-900);
+}
+.logo {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  font-size: 30px;
+}
+.logo a {
+  color: var(--text-black-900);
+  font-weight: 700;
+  padding: 15px 20px;
+  font-size: 30px;
+  letter-spacing: 5px;
+  position: relative;
+  text-decoration: none;
+}
+.logo a span {
+  font-family: "Clicker Script", cursive;
+  font-size: 40px;
+}
+.logo::before,
+.logo::after {
+  border-radius: 0.3rem;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+.logo::before {
+  border-bottom: 5px solid var(--skin-color);
+  border-left: 5px solid var(--skin-color);
+  bottom: 0;
+  left: 0;
+}
+.logo::after {
+  border-top: 5px solid var(--skin-color);
+  border-right: 5px solid var(--skin-color);
+  top: 0;
+  right: 0;
+}
+@media (max-width: 430px) {
+  .logo {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+  }
+  .logo a {
+    padding: 0.8rem 1rem;
+    font-size: 1.5rem;
+  }
+}

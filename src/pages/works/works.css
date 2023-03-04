@@ -1,0 +1,35 @@
+.folio-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.folio-header {
+  padding: 0 3rem;
+}
+.drop-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  gap: 40px 60px;
+}
+
+@media (max-width: 800px) {
+  .folio-header {
+    padding: 0 2rem;
+  }
+  .drop-wrapper {
+    gap: 35px 50px;
+  }
+}
+@media (max-width: 400px) {
+  .folio-header {
+    padding: 0 1.5rem;
+  }
+  .drop-wrapper {
+    gap: 1.5rem;
+  }
+}
