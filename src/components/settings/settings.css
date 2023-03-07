@@ -75,8 +75,6 @@
 }
 .style-switcher .colors span.active {
   border: 4px dotted white;
-  height: 29px;
-  width: 29px;
 }
 .style-switcher #color-1 {
   background: rgb(87, 84, 84);

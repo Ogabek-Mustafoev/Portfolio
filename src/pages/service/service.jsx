@@ -7,10 +7,10 @@ export default function Service() {
     <>
       <GoBack />
       <div className="block service-wrap container">
-        <h2>Services</h2>
+        <h2 data-aos='zoom-out-up' >Services</h2>
       </div>
       <div className="wrapper">
-        <div className="card-wrapper">
+        <div data-aos='zoom-out-up' data-aos-delay='400' className="card-wrapper">
           {data.map((item) => (
             <Card key={item.title} {...item} />
           ))}

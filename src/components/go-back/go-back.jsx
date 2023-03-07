@@ -7,7 +7,7 @@ export default function GoBack() {
 
   return (
     <div className="go-back">
-      <span className='back' onClick={() => navigate(-1)}><MdOutlineClose /></span>
+      <span data-aos='zoom-in' className='back' onClick={() => navigate(-1)}><MdOutlineClose /></span>
     </div>
   )
 }

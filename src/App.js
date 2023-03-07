@@ -1,7 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Footer, Header, Settings } from "./components";
 import PageRoutes from './routes';
 import Aos from "aos";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import "aos/dist/aos.css";
 import "./App.css";
 
 export default function App() {
@@ -17,6 +20,7 @@ export default function App() {
   return (
     <>
       <Header />
+      <ToastContainer autoClose={3000} theme='dark' />
       <Settings />
       <PageRoutes />
       <Footer />

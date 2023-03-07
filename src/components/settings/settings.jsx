@@ -41,14 +41,14 @@ export default function Settings() {
   return (
     <>
       <div onClick={() => setOpen(!open)} className="overlay" style={{ display: open ? 'block' : 'none' }} ></div>
-      <div className={`style-switcher ${open && 'open'}`}>
+      <div data-aos-delay="400" className={`style-switcher ${open && 'open'}`}>
         <div onClick={() => setOpen(!open)} className="style-switcher-toggler s-icon">
           <MdSettings className='spinner' />
         </div>
         <div
           className="day-night s-icon"
           onClick={changeTheme}>
-          {darkmode ? <HiMoon /> : <HiSun />}
+          {!darkmode ? <HiSun /> : <HiMoon />}
         </div>
         <h4>Colors</h4>
         <div className="colors">

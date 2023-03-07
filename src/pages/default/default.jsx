@@ -11,7 +11,7 @@ export default function DefaultPage() {
 
   return (
     <div className="default-wrapper">
-      <ul className="navigate">
+      <ul data-aos="fade-up" data-aos-delay='400' className="navigate">
         <li><span onClick={() => linkTo('/home')} data-text="Home"><FaHome /></span></li>
         <li><span onClick={() => linkTo('/about')} data-text="About"><FaInfoCircle /></span></li>
         <li><span onClick={() => linkTo('/service')} data-text="Service"><FaCode /></span></li>

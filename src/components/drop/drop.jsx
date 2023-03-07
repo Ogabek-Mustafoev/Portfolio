@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './drop.css';
 
-export default function Drop({ num, subtitle, title, slug }) {
+export default function Drop({ num, title, slug }) {
   const setZero = (num) => {
     if (num < 10) {
       return `0${num}`;
