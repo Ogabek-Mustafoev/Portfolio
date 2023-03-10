@@ -94,7 +94,6 @@ export default function Contact() {
           <Link data-aos='fade-left' data-aos-delay='200' to="/" className="links"><span><FaArrowRight /></span> Main</Link>
           <Link data-aos='fade-left' data-aos-delay='400' to="/home" className="links"><span><FaArrowRight /></span> Home</Link>
           <Link data-aos='fade-left' data-aos-delay='600' to="/about" className="links"><span><FaArrowRight /></span> About</Link>
-          <Link data-aos='fade-left' data-aos-delay='800' to="/works" className="links"><span><FaArrowRight /></span> Works</Link>
         </div>
       </div>
       <div data-aos='zoom-out' data-aos-delay='1000' className="credit"> Created by Mr. <span> | BekDev | </span>{new Date().getFullYear()} ©️ All Rights Reserved! </div>
