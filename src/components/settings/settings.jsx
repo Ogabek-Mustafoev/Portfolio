@@ -23,16 +23,16 @@ export default function Settings() {
   const changeTheme = () => {
     setDarkmode(!darkmode);
     if (darkmode) {
-      document.documentElement.classList.add('dark');
-    } else {
       document.documentElement.classList.remove('dark');
+    } else {
+      document.documentElement.classList.add('dark');
     }
   }
 
-  const setColor = (e) => {
+  function setColor(e) {
     document.body.className = '';
-    document.body.classList.add(e);
-    setActive(e);
+    document.body.classList.add(e?.target?.id || e);
+    setActive(e?.target?.id || e);
     if (open) {
       setOpen(false);
     }
@@ -48,15 +48,15 @@ export default function Settings() {
         <div
           className="day-night s-icon"
           onClick={changeTheme}>
-          {!darkmode ? <HiSun /> : <HiMoon />}
+          {darkmode ? <HiSun /> : <HiMoon />}
         </div>
         <h4>Colors</h4>
         <div className="colors">
-          <span id="color-1" onClick={e => setColor(e.target.id)} className={active === 'color-1' ? 'active' : ''} />
-          <span id="color-2" onClick={e => setColor(e.target.id)} className={active === 'color-2' ? 'active' : ''} />
-          <span id="color-3" onClick={e => setColor(e.target.id)} className={active === 'color-3' ? 'active' : ''} />
-          <span id="color-4" onClick={e => setColor(e.target.id)} className={active === 'color-4' ? 'active' : ''} />
-          <span id="color-5" onClick={e => setColor(e.target.id)} className={active === 'color-5' ? 'active' : ''} />
+          <span id="color-1" onClick={setColor} className={active === 'color-1' ? 'active' : ''} />
+          <span id="color-2" onClick={setColor} className={active === 'color-2' ? 'active' : ''} />
+          <span id="color-3" onClick={setColor} className={active === 'color-3' ? 'active' : ''} />
+          <span id="color-4" onClick={setColor} className={active === 'color-4' ? 'active' : ''} />
+          <span id="color-5" onClick={setColor} className={active === 'color-5' ? 'active' : ''} />
         </div>
       </div>
     </>

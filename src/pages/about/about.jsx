@@ -1,4 +1,4 @@
-import cv from '../../assets/Ogabek Mustafoev-CV.pdf'
+import cv from '../../assets/CV.pdf'
 import level from '../../assets/English level.pdf'
 import certificate from '../../assets/it_sertifikat.pdf'
 import './about.css';

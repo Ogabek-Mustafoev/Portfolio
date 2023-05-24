@@ -19,12 +19,13 @@ h3.hello small {
 h3.hello span {
   font-family: "Clicker Script", cursive;
   font-size: 6rem;
+  line-height: 6rem;
   font-weight: 700;
   color: var(--skin-color);
 }
 h3.my-profession {
   font-size: 1.5rem;
-  margin: 15px 0;
+  margin-bottom: 1rem;
   font-weight: 300;
 }
 .home .home-img {
@@ -39,8 +40,8 @@ h3.my-profession {
   color: var(--skin-color);
 }
 .home-info p {
-  margin-bottom: 70px;
-  font-size: 24px;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
   color: var(--text-black-700);
 }
 .home .home-img .img {

@@ -14,16 +14,16 @@ export default function Home() {
             <h3 data-aos="fade-up" className="hello">Hi. <small>I'm</small> <br />
               <span data-aos="fade-up" data-aos-delay='300' className="name">Mustafoev Ogabek</span>
             </h3>
-            <h3 className="my-profession" data-aos="fade-up" data-aos-delay='400'>I work as <br />
+            <h3 className="my-profession" data-aos="fade-up" data-aos-delay='400'><small>I work as</small> <br />
               <ReactTypingEffect
                 data-aos="fade-up" data-aos-delay='500'
-                text={["React JS developer (front-end)", "Next JS developer (SSR | SEO)", "State manager(Redux | Zustand)"]}
+                text={["React JS developer (front-end)", "Next JS developer (SSR | SEO)", "State manager(Redux Toolkit)"]}
                 cursorRenderer={cursor => <h1>{cursor}</h1>}
                 speed={100}
                 eraseSpeed={30}
                 eraseDelay={2000}
                 typingDelay={1000}
-                displayTextRenderer={(text, i) => {
+                displayTextRenderer={(text) => {
                   return (
                     <h1>
                       {text.split('').map((char, i) => {
@@ -40,9 +40,9 @@ export default function Home() {
                 }}
               />
             </h3>
-            <p data-aos="fade-up" data-aos-delay='600'>I'm a front-end Developer. I work with JavaScript, ReactJS,
-              NextJS, Redux | Toolkit and many UI components, CSS frameworks...</p>
-            <Link to="/contact" className="btn hire-me" data-aos="fade-up" data-aos-delay='700'>Let's Talk!</Link>
+            <p data-aos="fade-up" data-aos-delay='600'>I'm a front-end developer with JavaScript, TypeScript, React.js,
+              Next.js, Redux | Toolkit and many UI components, CSS frameworks...</p>
+            <Link to="/contact" className="btn hire-me" data-aos="fade-up">Let's Talk!</Link>
           </div>
           <div className="home-img">
             <div data-aos="zoom-out" data-aos-delay='1000' data-aos-duration='1300' className="img">

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Footer, Header, Settings } from "./components";
 import PageRoutes from './routes';
 import Aos from "aos";
@@ -11,9 +11,9 @@ export default function App() {
   useEffect(() => {
     Aos.init({
       offset: 50,
-      duration: 600,
+      duration: 400,
       easing: "ease-in-sine",
-      delay: 200,
+      delay: 150,
     });
   }, []);
 

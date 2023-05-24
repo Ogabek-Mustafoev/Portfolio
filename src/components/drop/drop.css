@@ -40,6 +40,12 @@
 .drop:nth-child(10) {
   border-radius: 74% 26% 22% 78% / 47% 29% 71% 53%;
 }
+.drop:nth-child(11) {
+  border-radius: 34% 66% 31% 69% / 58% 69% 31% 42%;
+}
+.drop:nth-child(12) {
+  border-radius: 63% 37% 47% 53% / 58% 22% 78% 42%;
+}
 .drop:hover {
   border-radius: 50%;
 }

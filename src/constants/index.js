@@ -11,6 +11,8 @@ import shop from '../assets/img/work7.png';
 import news from '../assets/img/work8.png';
 import videosTube from '../assets/img/work9.png';
 import trailer from '../assets/img/work10.png';
+import nikeShop from '../assets/img/work11.png';
+import figmaDesign from '../assets/img/work12.png';
 
 export const data = [
   {
@@ -53,7 +55,7 @@ export const works = [
     describtion: "Full-Stack JavaScript Project. Json-server used as backend. All data come from db.json and messages are saved to that file.",
     imgSrc: mers,
     demo: 'https://js-full-stack-mers-project.vercel.app/',
-    github: 'https://github.com/Ogabek-Mustafoev/JS_full-stack_mers-project.git',
+    github: 'https://github.com/Ogabek-Mustafoev/JS_full-stack_mers-project',
   },
   {
     slug: 'js-serial',
@@ -62,7 +64,7 @@ export const works = [
     describtion: "Full-Stack JavaScript Project. Json-server used as backend. All data come from db.json and messages are saved to that file.",
     imgSrc: serial,
     demo: 'https://js-full-stack-serial-project.vercel.app/',
-    github: 'https://github.com/Ogabek-Mustafoev/JS_full-stack_serial-project.git',
+    github: 'https://github.com/Ogabek-Mustafoev/JS_full-stack_serial-project',
   },
   {
     slug: 'twitter-project',
@@ -71,7 +73,7 @@ export const works = [
     describtion: "In this project, you can add, remove and also filter posts. This project shows how to build React Class Component Application.",
     imgSrc: twitter,
     demo: 'https://react-twitter-analog.vercel.app/',
-    github: 'https://github.com/Ogabek-Mustafoev/React_Twitter-Analog.git',
+    github: 'https://github.com/Ogabek-Mustafoev/React_Twitter-Analog',
   },
   {
     slug: 'movie-project',
@@ -89,7 +91,7 @@ export const works = [
     describtion: "Shop-App with FakeStore-API. This e-commerce project is SPA with react-router-dom. You can add products to your cart(basket).",
     imgSrc: shop,
     demo: 'https://react-shop-with-fake-store-api.vercel.app/',
-    github: 'https://github.com/Ogabek-Mustafoev/React_Shop_with_FakeStoreAPI.git',
+    github: 'https://github.com/Ogabek-Mustafoev/React_Shop_with_FakeStoreAPI',
   },
   {
     slug: 'news-app',
@@ -98,7 +100,7 @@ export const works = [
     describtion: "Full-Stack News-App with Redux-Toolkit and Json-Server. All data come from db.json file and added posts are saved to that file.",
     imgSrc: news,
     demo: 'https://react-redux-full-stack-news-app.vercel.app/',
-    github: 'https://github.com/Ogabek-Mustafoev/React-Redux_Full-Stack_News-App.git',
+    github: 'https://github.com/Ogabek-Mustafoev/React-Redux_Full-Stack_News-App',
   },
   {
     slug: 'videos-tube',
@@ -107,7 +109,7 @@ export const works = [
     describtion: "VideosTube project is YouTube clone with RapidAPI. You can watch any videos like YouTube, it also supports dark and light theme.",
     imgSrc: videosTube,
     demo: 'https://react-youtube-clone-with-rapid-api.vercel.app/',
-    github: 'https://github.com/Ogabek-Mustafoev/React_YouTube-Clone_with_Rapid-API.git',
+    github: 'https://github.com/Ogabek-Mustafoev/React_YouTube-Clone_with_Rapid-API',
   },
   {
     slug: 'trailer-app',
@@ -116,7 +118,7 @@ export const works = [
     describtion: "By this project you can watch trailers of any movies, series and cartoons. All data come from TMDB-APi, you can watch newest trailers.",
     imgSrc: trailer,
     demo: 'https://react-trailer-with-tmdb-api.vercel.app/',
-    github: 'https://github.com/Ogabek-Mustafoev/React_Trailer_with_TMDB-API.git',
+    github: 'https://github.com/Ogabek-Mustafoev/React_Trailer_with_TMDB-API',
   },
   {
     slug: 'cook-app',
@@ -125,7 +127,7 @@ export const works = [
     describtion: "By this project you can cook worldwide meals. All meals are listed with ingrediens, preparation method and video instruction. Let's cook!",
     imgSrc: cook,
     demo: 'https://react-cook-with-mealdbapi.vercel.app/',
-    github: 'https://github.com/Ogabek-Mustafoev/React_Cook_with_MealDB-API.git',
+    github: 'https://github.com/Ogabek-Mustafoev/React_Cook_with_MealDB-API',
   },
   {
     slug: 'blog-app',
@@ -134,6 +136,24 @@ export const works = [
     describtion: "Full-Stack project shows you my posts realated to IT sphere and important world news will be published. GraphCMS is used for backend.",
     imgSrc: blog,
     demo: 'https://full-stack-next-js-blog.vercel.app/',
-    github: 'https://github.com/Ogabek-Mustafoev/Full-Stack_NextJS_Blog.git',
+    github: 'https://github.com/Ogabek-Mustafoev/Full-Stack_NextJS_Blog',
+  },
+  {
+    slug: 'nike-shop',
+    title: "Nike Shop",
+    subtitle: 'Built on React JS, fully responsive on different screens and window sizes',
+    describtion: "Nike Shop application is built in react.js. This e-commerce project is fully shopify application. You can add products to your cart(basket).",
+    imgSrc: nikeShop,
+    demo: 'https://e-commerce-nike.vercel.app/',
+    github: 'https://github.com/Ogabek-Mustafoev/E-Commerce-Nike',
+  },
+  {
+    slug: 'figma-design',
+    title: "Figma design",
+    subtitle: 'Simple static website, fully responsive on different screens and window sizes',
+    describtion: "This website is created by just HTML and CSS. Design is created in Figma. This is made for MyTeacher.uz online IELTS teaching platform.",
+    imgSrc: figmaDesign,
+    demo: 'https://figma-html-css.vercel.app/',
+    github: 'https://github.com/Ogabek-Mustafoev/Figma-HTML-CSS',
   },
 ]

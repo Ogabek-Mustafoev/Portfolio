@@ -6,7 +6,7 @@
   border-radius: 2rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
+  justify-content: flex-end;
   box-shadow: 15px 15px 30px var(--black), -16px -16px 30px var(--white);
   overflow: hidden;
 }

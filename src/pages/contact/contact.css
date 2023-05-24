@@ -41,7 +41,7 @@
   background: transparent;
   border: none;
   outline: none;
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   padding: 0 0.8rem;
   z-index: 1;
   color: #fff;
@@ -50,8 +50,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  line-height: 40px;
-  font-size: 1.4rem;
+  line-height: 30px;
+  font-size: 1.25rem;
   padding: 0 0.8rem;
   display: block;
   transition: 0.5s;
@@ -89,6 +89,7 @@
   height: 100%;
   resize: none;
   color: #fff;
+  font-family: inherit;
 }
 .form-container .row100 .inputBox textarea:focus + .label,
 .form-container .row100 .inputBox textarea:valid + .label {
@@ -119,22 +120,24 @@
   display: flex;
   gap: 0.5rem;
   align-items: center;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding: 0.5rem 0;
   color: var(--text-black-900);
 }
 .box-container .box h3 span {
   color: var(--skin-color);
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 .box-container .box .links {
   display: block;
   align-items: center;
-  font-size: 1.1rem;
+  justify-content: center;
+  font-size: 1rem;
   color: var(--text-black-700);
-  padding: 0.5rem 0;
+  line-height: 2.3rem;
 }
 .box-container .box .links span {
+  margin-right: 0.3rem;
   color: var(--skin-color);
   transition: 0.3s;
 }
@@ -142,7 +145,7 @@
   padding-right: 1rem;
 }
 .box-container .box p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--text-black-700);
   padding: 0.8rem 0;
   padding-right: 1.5rem;

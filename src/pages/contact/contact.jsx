@@ -6,8 +6,8 @@ import {
 import { Link } from 'react-router-dom';
 import { GoBack } from '../../components';
 import emailjs from '@emailjs/browser';
-import './contact.css';
 import { toast } from 'react-toastify';
+import './contact.css';
 
 export default function Contact() {
   const [sending, setSending] = useState('Send');
